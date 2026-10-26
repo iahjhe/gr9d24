@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Triangle Midline & Congruence Quiz</title>
+<style>
+:root{--ink:#172033;--muted:#657089;--paper:#f5f7fb;--card:#fff;--line:#dce3ef;--blue:#315ee8;--blue2:#eaf0ff;--green:#137547;--greenbg:#e9f8ef;--orange:#9a5a08;--orangebg:#fff4df}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{padding:34px 18px 28px;background:linear-gradient(135deg,#182848,#315ee8);color:white}
+.wrap{max-width:1050px;margin:auto;padding:0 16px}h1{font-size:clamp(1.7rem,4vw,2.6rem);line-height:1.15;margin:0 0 10px}header p{margin:0;color:#e4eaff;max-width:720px}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}nav a{color:white;text-decoration:none;border:1px solid #ffffff66;border-radius:999px;padding:7px 13px;font-size:.92rem}
+main{padding:24px 0 55px}.section-title{margin:26px 0 12px;font-size:1.45rem}.sub{color:var(--muted);margin-top:-6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 5px 20px #20345c0a;min-width:0}
+.card h3{margin:0 0 8px;font-size:1.1rem}.tag{display:inline-block;background:var(--blue2);color:#2348bf;border-radius:6px;padding:2px 8px;font-size:.78rem;font-weight:700;margin-bottom:8px}
+.diagram{width:100%;max-height:245px;display:block;background:#fbfcff;border:1px solid #edf0f7;border-radius:12px;margin:10px 0 12px}
+.diagram text{font-family:system-ui,sans-serif;font-size:14px;fill:var(--ink)}.diagram .tri{fill:none;stroke:#263653;stroke-width:2.5;stroke-linejoin:round}.diagram .mid{stroke:var(--blue);stroke-width:3}.diagram .tick{stroke:#263653;stroke-width:2}.diagram .label{font-weight:700;fill:#244ed1}
+.problem{font-weight:600;margin:8px 0}.choices{display:grid;gap:8px;margin:12px 0}.choice{display:flex;align-items:flex-start;gap:9px;text-align:left;width:100%;border:1px solid var(--line);border-radius:10px;background:white;padding:10px 12px;color:var(--ink);cursor:pointer;font:inherit}.choice:hover{border-color:#8da5ff;background:#f8faff}.choice.selected{border-color:var(--blue);background:var(--blue2)}.choice.correct{border-color:#35a36c;background:var(--greenbg)}.choice.wrong{border-color:#d68a31;background:var(--orangebg)}.letter{font-weight:800;min-width:22px}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.btn{border:0;border-radius:9px;padding:9px 13px;font-weight:700;cursor:pointer;font:inherit}.primary{background:var(--blue);color:white}.secondary{background:#edf1f8;color:#24314b}.answer{display:none;margin-top:12px;padding:12px 14px;background:var(--greenbg);border:1px solid #bde7cc;border-radius:10px}.answer.show{display:block}.answer strong{color:var(--green)}.explain{color:#2c4b3a}.scorebar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;background:white;border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:14px 0}.score{font-weight:800;font-size:1.1rem}.small{font-size:.9rem;color:var(--muted)}.mc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:14px}.mc-card{background:white;border:1px solid var(--line);border-radius:16px;padding:16px}.mc-card h3{font-size:1rem;margin:0 0 7px}.mc-card .choices{margin-bottom:8px}footer{text-align:center;color:var(--muted);padding:20px;font-size:.85rem}
+@media(max-width:520px){.card{padding:14px}.diagram{max-height:210px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<h1>Triangle Midline & Congruence Quiz</h1>
+<p>Study the diagrams, choose your answers, then reveal the solutions when you’re ready. Your score updates as you check answers.</p>
+<nav><a href="#midline">Midline problems</a><a href="#multiple-choice">Multiple choice</a><a href="#rules">Quick review</a></nav>
+</div></header>
+<main class="wrap">
+<section id="midline">
+<h2 class="section-title">Part A · Find the missing length</h2>
+<p class="sub">Use the Triangle Midline Theorem: a segment joining the midpoints of two sides is parallel to the third side and half its length.</p>
+<div class="grid">
+<article class="card quiz" data-answer="B" data-explanation="EF is a midsegment, so EF = LN ÷ 2. Thus x + 3.5 = (x + 10) ÷ 2. Solving gives x = 3, and LN = x + 10 = 13 units.">
+<span class="tag">Problem 1</span><h3>Find x and |LN|</h3>
+<svg class="diagram" viewBox="0 0 320 225" role="img" aria-label="Triangle LMN with E and F as midpoints and EF as a midsegment">
+<path class="tri" d="M160 24 L38 190 L282 190 Z"/><path class="mid" d="M99 107 L221 107"/>
+<path class="tick" d="M89 55l12 8 M66 139l12 8 M218 55l12 8 M239 139l12 8"/>
+<text x="154" y="17">M</text><text x="19" y="207">L</text><text x="286" y="207">N</text><text x="82" y="103">E</text><text x="226" y="103">F</text>
+<text class="label" x="123" y="98">x + 3.5</text><text class="label" x="132" y="215">x + 10</text>
+</svg>
+<p class="problem">What are x and |LN|?</p>
+<div class="choices"><button class="choice" data-value="A"><span class="letter">A.</span><span>x = 2, LN = 12</span></button><button class="choice" data-value="B"><span class="letter">B.</span><span>x = 3, LN = 13</span></button><button class="choice" data-value="C"><span class="letter">C.</span><span>x = 6.5, LN = 16.5</span></button><button class="choice" data-value="D"><span class="letter">D.</span><span>x = 10, LN = 20</span></button></div>
+<div class="actions"><button class="btn primary reveal">Show answer</button><button class="btn secondary reset">Reset</button></div><div class="answer"><strong>Answer: x = 3; |LN| = 13 units.</strong><div class="explain"></div></div>
+</article>
+<article class="card quiz" data-answer="C" data-explanation="DE is a midsegment, so DE = CB ÷ 2 = 56 ÷ 2 = 28 cm. Therefore 3x − 5 = 28, so 3x = 33 and x = 11.">
+<span class="tag">Problem 2</span><h3>Find x and |DE|</h3>
+<svg class="diagram" viewBox="0 0 320 225" role="img" aria-label="Triangle ABC with D and E as midpoints and DE as a midsegment">
+<path class="tri" d="M160 22 L45 190 L278 190 Z"/><path class="mid" d="M102 106 L219 106"/>
+<text x="155" y="16">A</text><text x="30" y="207">C</text><text x="280" y="207">B</text><text x="85" y="101">D</text><text x="223" y="101">E</text>
+<text class="label" x="119" y="97">(3x − 5) cm</text><text class="label" x="127" y="215">56 cm</text>
+</svg>
+<p class="problem">What are x and |DE|?</p>
+<div class="choices"><button class="choice" data-value="A"><span class="letter">A.</span><span>x = 9, DE = 22 cm</span></button><button class="choice" data-value="B"><span class="letter">B.</span><span>x = 10, DE = 25 cm</span></button><button class="choice" data-value="C"><span class="letter">C.</span><span>x = 11, DE = 28 cm</span></button><button class="choice" data-value="D"><span class="letter">D.</span><span>x = 17, DE = 46 cm</span></button></div>
+<div class="actions"><button class="btn primary reveal">Show answer</button><button class="btn secondary reset">Reset</button></div><div class="answer"><strong>Answer: x = 11; |DE| = 28 cm.</strong><div class="explain"></div></div>
+</article>
+<article class="card quiz" data-answer="A" data-explanation="S and R are midpoints, so SR is half of FD. Using the labels, 2x − 14 = (x + 2) ÷ 2. Multiply by 2: 4x − 28 = x + 2, so x = 10. Then SR = 2(10) − 14 = 6 units.">
+<span class="tag">Problem 3</span><h3>Find x and |SR|</h3>
+<svg class="diagram" viewBox="0 0 320 225" role="img" aria-label="Triangle EDF with R and S as midpoints and SR as a midsegment">
+<path class="tri" d="M35 38 L285 38 L168 197 Z"/><path class="mid" d="M160 38 L101 117"/>
+<text x="18" y="32">E</text><text x="288" y="32">D</text><text x="166" y="215">F</text><text x="154" y="27">R</text><text x="84" y="132">S</text>
+<text class="label" x="110" y="93">2x − 14</text><text class="label" x="218" y="125">x + 2</text>
+</svg>
+<p class="problem">Assume FD = x + 2. What are x and |SR|?</p>
+<div class="choices"><button class="choice" data-value="A"><span class="letter">A.</span><span>x = 10, SR = 6 units</span></button><button class="choice" data-value="B"><span class="letter">B.</span><span>x = 8, SR = 2 units</span></button><button class="choice" data-value="C"><span class="letter">C.</span><span>x = 12, SR = 10 units</span></button><button class="choice" data-value="D"><span class="letter">D.</span><span>x = 6, SR = −2 units</span></button></div>
+<div class="actions"><button class="btn primary reveal">Show answer</button><button class="btn secondary reset">Reset</button></div><div class="answer"><strong>Answer: x = 10; |SR| = 6 units.</strong><div class="explain"></div></div>
+</article>
+<article class="card quiz" data-answer="D" data-explanation="AE is a midsegment, so CS = 2 × AE = 2 × 7 = 14 cm. Thus 8 + 3x = 14, so 3x = 6 and x = 2.">
+<span class="tag">Problem 4</span><h3>Find x and |CS|</h3>
+<svg class="diagram" viewBox="0 0 320 225" role="img" aria-label="Triangle RCS with A and E as midpoints and AE as a midsegment">
+<path class="tri" d="M160 22 L35 190 L285 190 Z"/><path class="mid" d="M97 106 L223 106"/>
+<text x="155" y="16">R</text><text x="20" y="207">C</text><text x="288" y="207">S</text><text x="79" y="101">A</text><text x="227" y="101">E</text>
+<text class="label" x="144" y="97">7 cm</text><text class="label" x="113" y="215">(8 + 3x) cm</text>
+</svg>
+<p class="problem">What are x and |CS|?</p>
+<div class="choices"><button class="choice" data-value="A"><span class="letter">A.</span><span>x = 1, CS = 11 cm</span></button><button class="choice" data-value="B"><span class="letter">B.</span><span>x = 3, CS = 17 cm</span></button><button class="choice" data-value="C"><span class="letter">C.</span><span>x = 4, CS = 20 cm</span></button><button class="choice" data-value="D"><span class="letter">D.</span><span>x = 2, CS = 14 cm</span></button></div>
+<div class="actions"><button class="btn primary reveal">Show answer</button><button class="btn secondary reset">Reset</button></div><div class="answer"><strong>Answer: x = 2; |CS| = 14 cm.</strong><div class="explain"></div></div>
+</article>
+</div>
+</section>
+<section id="multiple-choice">
+<h2 class="section-title">Part B · Multiple-choice review</h2>
+<p class="sub">The questions below have been rewritten for clarity. Choose one answer, then reveal the correct answer and explanation.</p>
+<div class="scorebar"><div><strong>Review score</strong><div class="small">Counted when you reveal an answer after choosing.</div></div><div class="score" id="score">0 / 12</div><button class="btn secondary" id="resetAll">Reset all</button></div>
+<div class="mc-grid" id="mcGrid"></div>
+</section>
+<section id="rules">
+<h2 class="section-title">Quick review</h2><div class="grid">
+<div class="card"><h3>CPCTC</h3><p>Corresponding Parts of Congruent Triangles are Congruent. If two triangles are congruent, their matching sides and angles have equal measures.</p></div>
+<div class="card"><h3>Triangle order matters</h3><p>In △ABC ≅ △DEF, A matches D, B matches E, and C matches F. Match vertices in the same order.</p></div>
+<div class="card"><h3>Midline Theorem</h3><p>A segment joining the midpoints of two sides of a triangle is parallel to the third side and half as long as the third side.</p></div>
+</div>
+</section>
+</main><footer>Practice first, reveal answers second. Keep going—you’ve got this!</footer>
+<script>
+const mcQuestions = [
+{q:"If △ABC ≅ △DEF, which statement must be true by CPCTC?",opts:["AB = DE","∠A = ∠E","BC = EF","AC = DE"],a:2,why:"The vertex order gives A ↔ D, B ↔ E, and C ↔ F. Therefore BC corresponds to EF. AB = DE is also a matching side, but the question asks which statement? This item has more than one true statement, so use the revised version below."},
+{q:"Given △PQR ≅ △XYZ, which angle corresponds to ∠Q?",opts:["∠X","∠Y","∠Z","∠P"],a:1,why:"The order shows P ↔ X, Q ↔ Y, and R ↔ Z, so ∠Q corresponds to ∠Y."},
+{q:"If △ABC ≅ △DEF, which side corresponds to BC?",opts:["DE","DF","EF","AB"],a:2,why:"B corresponds to E and C corresponds to F, so side BC corresponds to side EF."},
+{q:"Given △LMN ≅ △RST, if LM = 8 cm, what is RS?",opts:["4 cm","8 cm","16 cm","The length cannot be determined"],a:1,why:"L ↔ R and M ↔ S, so LM corresponds to RS. Corresponding sides of congruent triangles have equal lengths."},
+{q:"If △RST ≅ △XYZ, RT = 4x − 1 and XZ = 19, what is x?",opts:["4","5","6","10"],a:1,why:"R ↔ X and T ↔ Z, so RT = XZ. Set 4x − 1 = 19; then 4x = 20 and x = 5."},
+{q:"If △ABC ≅ △DEF, m∠B = 2x + 10 and m∠E = 50°, what is x?",opts:["10","15","20","25"],a:2,why:"B corresponds to E, so 2x + 10 = 50. Then 2x = 40 and x = 20."},
+{q:"If △PQR ≅ △STU, QR = 3x + 2 and TU = 17, what is x?",opts:["3","4","4.5","5"],a:3,why:"Q ↔ T and R ↔ U, so QR = TU. Solve 3x + 2 = 17; 3x = 15 and x = 5."},
+{q:"Which statement best describes the Triangle Midline Theorem?",opts:["A midline is perpendicular to the third side.","A midline is parallel to the third side and half its length.","A midline is equal in length to the third side.","A midline bisects an angle of the triangle."],a:1,why:"The segment joining the midpoints of two sides is parallel to the third side and has half its length."},
+{q:"A segment joins the midpoints of two sides of a triangle. What relationship must it have with the third side?",opts:["It is perpendicular to the third side.","It is twice as long as the third side.","It is parallel to the third side.","It is equal in length to the third side."],a:2,why:"By the Triangle Midline Theorem, the segment is parallel to the third side."},
+{q:"In △ABC, D and E are the midpoints of AB and AC. If BC = 24 cm, what is DE?",opts:["6 cm","12 cm","24 cm","48 cm"],a:1,why:"DE is the midline, so it is half of BC: DE = 24 ÷ 2 = 12 cm."},
+{q:"If a triangle midline is 9 cm long, how long is the third side parallel to it?",opts:["4.5 cm","9 cm","18 cm","27 cm"],a:2,why:"The midline is half the third side, so the third side is 2 × 9 = 18 cm."},
+{q:"In △ABC, D and E are the midpoints of AB and AC. If DE = 3x + 1 and BC = 20, what is x?",opts:["2","3","4","6"],a:0,why:"DE = BC ÷ 2 = 10. So 3x + 1 = 10, 3x = 9, and x = 3. Note: the correct option for this equation is x = 3."}
+];
+// Repair two items so each has exactly one correct answer and the keyed option matches its math.
+mcQuestions[0]={q:"If △ABC ≅ △DEF, which side corresponds to BC?",opts:["DE","DF","EF","AB"],a:2,why:"The vertex order gives B ↔ E and C ↔ F, so BC corresponds to EF."};
+mcQuestions[11]={q:"In △ABC, D and E are the midpoints of AB and AC. If DE = 3x + 1 and BC = 20, what is x?",opts:["2","3","4","6"],a:1,why:"DE is half of BC, so DE = 10. Set 3x + 1 = 10; then 3x = 9 and x = 3."};
+const grid=document.getElementById('mcGrid'); let checked=new Set();
+mcQuestions.forEach((item,i)=>{const card=document.createElement('article');card.className='mc-card';card.dataset.index=i;
+card.innerHTML=`<span class="tag">Question ${i+1}</span><h3>${item.q}</h3><div class="choices">${item.opts.map((o,j)=>`<button class="choice" data-value="${j}"><span class="letter">${String.fromCharCode(65+j)}.</span><span>${o}</span></button>`).join('')}</div><div class="actions"><button class="btn primary reveal">Show answer</button><button class="btn secondary reset">Reset</button></div><div class="answer"><strong></strong><div class="explain"></div></div>`;
+grid.appendChild(card);
+});
+function updateScore(){document.getElementById('score').textContent=checked.size+' / '+mcQuestions.length;}
+function clearCard(card){card.querySelectorAll('.choice').forEach(b=>b.classList.remove('selected','correct','wrong'));card.querySelector('.answer').classList.remove('show');const i=Number(card.dataset.index);if(!Number.isNaN(i)){checked.delete(i);updateScore();}}
+document.querySelectorAll('.quiz').forEach(card=>{
+card.querySelectorAll('.choice').forEach(b=>b.addEventListener('click',()=>{card.querySelectorAll('.choice').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');}));
+card.querySelector('.reveal').addEventListener('click',()=>{const chosen=card.querySelector('.choice.selected');if(!chosen){card.querySelector('.answer').classList.add('show');card.querySelector('.answer strong').textContent='Choose an option first.';card.querySelector('.explain').textContent='';return;}card.querySelectorAll('.choice').forEach(b=>{if(b.dataset.value===card.dataset.answer)b.classList.add('correct');else if(b===chosen)b.classList.add('wrong');});card.querySelector('.answer').classList.add('show');card.querySelector('.answer strong').textContent=chosen.dataset.value===card.dataset.answer?'You got it!':'Not quite—review the solution:';card.querySelector('.explain').textContent=card.dataset.explanation;});
+card.querySelector('.reset').addEventListener('click',()=>{card.querySelectorAll('.choice').forEach(b=>b.classList.remove('selected','correct','wrong'));card.querySelector('.answer').classList.remove('show');});
+});
+document.querySelectorAll('.mc-card').forEach(card=>{
+const i=Number(card.dataset.index),item=mcQuestions[i];
+card.querySelectorAll('.choice').forEach(b=>b.addEventListener('click',()=>{card.querySelectorAll('.choice').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');}));
+card.querySelector('.reveal').addEventListener('click',()=>{const chosen=card.querySelector('.choice.selected');if(!chosen){card.querySelector('.answer').classList.add('show');card.querySelector('.answer strong').textContent='Choose an option first.';card.querySelector('.explain').textContent='';return;}
+card.querySelectorAll('.choice').forEach(b=>{if(Number(b.dataset.value)===item.a)b.classList.add('correct');else if(b===chosen)b.classList.add('wrong');});
+card.querySelector('.answer').classList.add('show');card.querySelector('.answer strong').textContent=Number(chosen.dataset.value)===item.a?'You got it!':'Correct answer: '+String.fromCharCode(65+item.a)+'. '+item.opts[item.a];card.querySelector('.explain').textContent=item.why;checked.add(i);updateScore();});
+card.querySelector('.reset').addEventListener('click',()=>{clearCard(card);});
+});
+document.getElementById('resetAll').addEventListener('click',()=>{document.querySelectorAll('.mc-card').forEach(clearCard);});
+</script>
+</body></html>
